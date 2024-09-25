@@ -36,8 +36,7 @@ public class Toko {
                 }
             }
         }
-
+        //mencegah error karena tipe data yang tidak sesuai
         in.close();
-
     }
 }

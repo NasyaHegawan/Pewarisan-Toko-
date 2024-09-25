@@ -1,4 +1,5 @@
 package Pewarisan;
+
 //Subclass
 //Inheritance (Pewarisan)
 public class CD extends Product {
@@ -6,11 +7,18 @@ public class CD extends Product {
     private int numSong;
     private String label;
 
-    public CD(){
-        super();//Constructor dari superclass
+    public CD() {
+        super();// Constructor dari superclass
         artist = "";
         numSong = 0;
         label = "";
+    }
+
+    public CD(int number, String name, int quantity, double price, String artist, int numSong, String label){
+        super(number, name, quantity, price);
+        this.artist=artist;
+        this.numSong=numSong;
+        this.label=label;
     }
 
     public String getArtist() {
@@ -37,12 +45,11 @@ public class CD extends Product {
         this.label = label;
     }
 
-    //Override
-    public void print(){
-       super.print();
-       System.out.println("Artist\t\t: "+ artist);
-       System.out.println("Total Song\t: "+ numSong);
-       System.out.println("Label\t\t: "+ label);
+    // Override
+    public void print() {
+        super.print();
+        System.out.println("Artist\t\t: " + artist);
+        System.out.println("Total Song\t: " + numSong);
+        System.out.println("Label\t\t: " + label);
     }
 }
-

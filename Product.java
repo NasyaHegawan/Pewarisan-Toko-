@@ -1,4 +1,5 @@
 package Pewarisan;
+
 //Superclass
 public class Product {
     private int number;
@@ -6,11 +7,19 @@ public class Product {
     private int quantity;
     private double price;
 
-    public Product(){
+    public Product() {
         number = 0;
         name = "";
         quantity = 0;
         price = 0.0;
+    }
+
+    public Product(int number, String name, int quantity, double price) {
+        // variabel class = parameter method
+        this.number = number;
+        this.name = name;
+        this.quantity = quantity;
+        this.price = price;
     }
 
     public int getNumber() {
@@ -45,12 +54,11 @@ public class Product {
         this.price = price;
     }
 
-    public void print(){
-        System.out.println("Number\t\t: "+number);
-        System.out.println("Name\t\t: "+name);
-        System.out.println("Quantity\t: "+quantity);
-        System.out.println("Price\t\t: "+price);
+    public void print() {
+        System.out.println("Number\t\t: " + number);
+        System.out.println("Name\t\t: " + name);
+        System.out.println("Quantity\t: " + quantity);
+        System.out.println("Price\t\t: " + price);
     }
 
-    }
-
+}

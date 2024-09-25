@@ -2,17 +2,17 @@ package Pewarisan;
 
 public class TesterDVD {
     public static void main(String[] args) {
-        DVD a = new DVD();
+        DVD b = new DVD();
 
-        a.setNumber(2);
-        a.setName("Reborn");
-        a.setQuantity(12);
-        a.setPrice(2000.0);
-        a.setLength(300);
-        a.setRating("PG");
-        a.setStudio("NewLine Cinema");
+        b.setNumber(2);
+        b.setName("Reborn");
+        b.setQuantity(12);
+        b.setPrice(2000.0);
+        b.setLength(300);
+        b.setRating("PG");
+        b.setStudio("NewLine Cinema");
         
-        a.print();
+        b.print();
 
     }
 }
